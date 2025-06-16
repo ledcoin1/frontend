@@ -1,5 +1,5 @@
 // Конфигурация
-const API_BASE_URL = 'https://your-api-address.com'; // Бекенд адресі
+const API_BASE_URL = 'https://ddddg.onrender.com'; // Бекенд адресі
 
 // Глобальды айнымалылар
 let tg = null;
