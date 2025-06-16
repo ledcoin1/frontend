@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.screen {
+    padding: 15px;
+}
+
+.hand {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    min-height: 80px;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.selected {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.game-table {
+    min-height: 120px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.attack-card {
+    background-color: #ffe6e6;
+}
+
+.defend-card {
+    background-color: #e6ffe6;
+}
+
+.trump-suit {
+    color: red;
+    font-weight: bold;
+}
+
+#trump-card {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.game-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.opponent-card {
+    width: 40px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 50px;
+        height: 75px;
+        font-size: 16px;
+    }
+}
